@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-eyci
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:ecf4ace908c64a93a107a7b106f797d3
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:47c394b1e1be36af7e65848686855d502ddfd2d95391d2319e93f25ad7fae13b
         name: my-python
         ports:
         - containerPort: 8081
