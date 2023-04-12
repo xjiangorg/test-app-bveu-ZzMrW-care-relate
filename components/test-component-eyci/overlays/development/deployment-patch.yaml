@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-eyci
+  namespace: build-e2e-ozcb-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:47c394b1e1be36af7e65848686855d502ddfd2d95391d2319e93f25ad7fae13b
+        name: my-python
+        resources: {}
+status: {}
